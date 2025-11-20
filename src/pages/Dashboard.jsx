@@ -15,7 +15,8 @@ export const Dashboard = () => {
             Hello, {user?.name || user?.email || 'User'}!
           </p>
           <p className={styles.text}>
-            This is your dashboard. Here you can manage your account and view important information.
+            This is your dashboard. Here you can manage your important
+            information.
           </p>
         </Card>
 
@@ -48,15 +49,24 @@ export const Dashboard = () => {
         <Card title="System Status">
           <div className={styles.statusGrid}>
             <div className={styles.statusItem}>
-              <span className={styles.statusIndicator} style={{ backgroundColor: '#10b981' }} />
+              <span
+                className={styles.statusIndicator}
+                style={{ backgroundColor: '#10b981' }}
+              />
               <span>API Status: Operational</span>
             </div>
             <div className={styles.statusItem}>
-              <span className={styles.statusIndicator} style={{ backgroundColor: '#10b981' }} />
+              <span
+                className={styles.statusIndicator}
+                style={{ backgroundColor: '#10b981' }}
+              />
               <span>Database: Connected</span>
             </div>
             <div className={styles.statusItem}>
-              <span className={styles.statusIndicator} style={{ backgroundColor: '#f59e0b' }} />
+              <span
+                className={styles.statusIndicator}
+                style={{ backgroundColor: '#f59e0b' }}
+              />
               <span>Cache: Warning</span>
             </div>
           </div>
